@@ -1,0 +1,13 @@
+<div #container class='container'> 
+	<div class='dialog'>
+		<div class="header">
+            <h3>{{type}}</h3>
+            <span class='close-btn' aria-hidden='true' value='Cancel' (click)="onCancel()">&times;</span>
+		</div>
+		<div class="content">{{message}}</div>
+		<div class="footer">
+			<input class='btn success' type='button' value='Ok' (click)="onSuccess()"/>
+			<input class='btn cancel' type='button' value='Cancel' (click)="onCancel()"/>
+        </div>
+    </div>
+</div>
